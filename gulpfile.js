@@ -4,9 +4,9 @@ var gulp = require('gulp'), 
     bower = require('gulp-bower');
 
 var config = {
-    publicDir: "./static",
-    sassPath: "./resources/sass",
-     bowerDir: "./bower_components" 
+    publicDir: "././src/static",
+    sassPath: "././resources/sass",
+     bowerDir: "././bower_components" 
   }
 
   gulp.task('bower', function() { 

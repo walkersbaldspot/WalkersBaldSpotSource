@@ -23,7 +23,9 @@
     "docpad-plugin-eco": "~2.1.0",
     "docpad-plugin-marked": "~2.3.0",
     "docpad-plugin-moment": "~2.0.2",
-    "docpad-plugin-partials": "~2.9.2"
+    "docpad-plugin-partials": "~2.9.2",
+    "gulp-sass": "^2.0.4",
+    "node-sass": "^3.2.0"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
