@@ -4,7 +4,7 @@ var gulp = require('gulp'), 
     bower = require('gulp-bower');
 
 var config = {
-    publicDir: "././src/static",
+    publicDir: "./src/static",
     sassPath: "././resources/sass",
      bowerDir: "././bower_components" 
   }
@@ -33,10 +33,16 @@ gulp.task('css', function() {
     .pipe(gulp.dest(config.publicDir + '/css'));
 });
 
+gulp.task('jScript', function() {
+    return gulp.src(config.bowerDir + "/bootstrap-sass-official/assets/javascripts/*.min.js") 
+        .pipe(gulp.dest(config.publicDir + "/js")); 
+});
+
+
 
 // Rerun the task when a file changes
  gulp.task('watch', function() {
      gulp.watch(config.sassPath + '/**/*.scss', ['css']); 
 });
 
-  gulp.task('default', ['bower', 'icons', 'css']);
+  gulp.task('default', ['bower', 'icons', 'css','jScript']);
