@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title><%= @getPreparedTitle() %></title>
+    <%- @getBlock("meta").toHTML() %>
+    <%- @getBlock("styles").toHTML() %>
+    <%- @getBlock("styles").add(["/css/style.css"]).toHTML() %>
+</head>
+<body>
+    <h1><%= @document.title %></h1>
+    <%- @content %>
+    <%- @getBlock("scripts").toHTML() %>
+</body>
+</html>

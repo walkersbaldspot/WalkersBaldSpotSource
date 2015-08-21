@@ -1,0 +1,21 @@
+{
+  "name": "GitBald",
+  "version": "0.0.0",
+  "homepage": "https://github.com/walkersbaldspot/walkersbaldspot.github.io",
+  "authors": [
+    "John Ptacek <jptacek@live.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.4.0",
+    "bootstrap-sass-official": "~3.3.5",
+    "bootstrap-sass": "~3.3.5"
+  }
+}
