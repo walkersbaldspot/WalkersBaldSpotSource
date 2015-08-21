@@ -59,7 +59,17 @@ docpadConfig = {
 
 
 
-outPath: 'public'
+
+
+#docpad -e static generate
+  environments:
+    static:
+      outPath: '../baldspot'
+    development:
+      outPath: 'public'
+      collections:
+        posts: ->
+          @getCollection('documents').findAllLive({layout: {'$in' : ['post', 'drafts']}}, [layout: 1,  date: -1])
 
 
 }
