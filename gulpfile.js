@@ -4,7 +4,7 @@ var gulp = require('gulp'), 
     bower = require('gulp-bower');
 
 var config = {
-    publicDir: "./public",
+    publicDir: "./static",
     sassPath: "./resources/sass",
      bowerDir: "./bower_components" 
   }
@@ -17,7 +17,7 @@ var config = {
 // Move fontawesome files
 gulp.task('icons', function() { 
     return gulp.src(config.bowerDir + "/fontawesome/fonts/**.*") 
-        .pipe(gulp.dest("./public/fonts")); 
+        .pipe(gulp.dest(config.publicDir + "/fonts")); 
 });
 
 
